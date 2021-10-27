@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card {
+    position: relative;
+    background-color: grey;
+    width: 90%;
+    border: 1px solid black;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.nameCard {
+    border: 1px solid black;
+    float: right;
+    width: 100px;
+    background-color: pink;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.info {
+    clear: both;
+    padding: 10px;
+}
+
+.row:nth-child(2) .card .nameCard {
+    background-color: darkred;
+    color: white;
+}
+
+.row:nth-child(3) .card .nameCard {
+    background-color: burlywood;
+}
+
+@media (min-width: 767px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.32%;
+    }
+}
