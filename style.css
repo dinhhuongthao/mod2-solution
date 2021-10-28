@@ -14,9 +14,9 @@ body {
 .card {
     position: relative;
     background-color: grey;
-    width: 90%;
+    /* width: 90%; */
     border: 1px solid black;
-    margin: 30px auto;
+    margin: 15px 15px;
     text-align: left;
 }
 
@@ -44,14 +44,19 @@ body {
     background-color: burlywood;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .col-md-6 {
         float: left;
         width: 50%;
     }
+
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .col-lg-4 {
         float: left;
         width: 33.32%;
